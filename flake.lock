@@ -1,0 +1,50 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "github:nix-systems/default"
+      },
+      "locked": {
+        "lastModified": 0,
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "TODO",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 0,
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "TODO",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 0,
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "TODO",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "flake-utils"
+}
