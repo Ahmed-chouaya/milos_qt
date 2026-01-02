@@ -1,9 +1,18 @@
 import milos
 import QtQuick
+import QtQuick.Window
 
 Window {
-    width: 800
-    height: 600
+    width: Screen.width
+    height: Screen.height
     visible: true
     title: "milos-qt"
+    color: Theme.backgroundColor()
+
+    TopBar {}
+
+    SettingsWindow {
+        id: settingsWindow
+        visible: false
+    }
 }

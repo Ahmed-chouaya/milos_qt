@@ -34,10 +34,10 @@ Rectangle {
         onClicked: button.clicked()
 
         onPressed: {
-            button.y = button.shadowOffset
+            button.color = Qt.darker(button.color, 1.1)
         }
         onReleased: {
-            button.y = 0
+            button.color = Theme.primaryColor()
         }
     }
 

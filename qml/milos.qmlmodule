@@ -10,6 +10,16 @@
         "NeobrutalistButton": "components/NeobrutalistButton.qml",
         "NeobrutalistSlider": "components/NeobrutalistSlider.qml",
         "NeobrutalistWindow": "components/NeobrutalistWindow.qml",
-        "NeobrutalistCard": "components/NeobrutalistCard.qml"
+        "NeobrutalistCard": "components/NeobrutalistCard.qml",
+        "TopBar": "components/TopBar.qml",
+        "TopBarButton": "components/TopBarButton.qml",
+        "ClockWidget": "components/ClockWidget.qml",
+        "BatteryWidget": "components/BatteryWidget.qml",
+        "NetworkWidget": "components/NetworkWidget.qml",
+        "SoundIcon": "components/SoundIcon.qml",
+        "SoundPopup": "components/SoundPopup.qml",
+        "SystemTray": "components/SystemTray.qml",
+        "SystemMonitorWidget": "components/SystemMonitorWidget.qml",
+        "SettingsNavButton": "components/SettingsNavButton.qml"
     }
 }

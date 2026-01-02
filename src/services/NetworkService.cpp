@@ -14,4 +14,6 @@ void NetworkService::updateStatus()
     m_signalStrength = 75;
     emit connectedChanged();
     emit signalStrengthChanged();
+    emit ssidChanged();
+    emit ipAddressChanged();
 }

@@ -5,12 +5,14 @@ import milos.components
 NeobrutalistCard {
     id: popup
 
-    width: 200
-    height: 120
+    width: 220
+    height: 140
     title: "Volume"
 
+    property int popupY: 48
+
     x: parent.x + 48
-    y: topBar.height
+    y: popupY
 
     property bool open: false
 
@@ -40,6 +42,7 @@ NeobrutalistCard {
                 value: audioService.volume
                 from: 0
                 to: 100
+                width: 120
                 onValueChanged: audioService.volume = value
             }
 
@@ -77,7 +80,7 @@ NeobrutalistCard {
             font.pixelSize: 10
             color: Theme.textColor()
             elide: Text.ElideRight
-            width: 180
+            width: 200
         }
     ]
 }

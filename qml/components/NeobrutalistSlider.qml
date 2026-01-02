@@ -18,14 +18,15 @@ Rectangle {
     border.color: Theme.colors.outline
 
     readonly property int shadowOffset: Theme.colors.shadowOffset
+    readonly property int thumbSize: 24
 
     Rectangle {
         id: track
+        anchors.fill: parent
+        anchors.margins: (parent.height - thumbSize) / 2
         color: slider.trackColor
         border.width: Theme.colors.outlineWidth
         border.color: Theme.colors.outline
-
-        readonly property int thumbSize: 24
 
         Rectangle {
             id: thumb

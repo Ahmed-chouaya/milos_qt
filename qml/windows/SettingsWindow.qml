@@ -1,6 +1,8 @@
 import QtQuick
+import QtQuick.Layouts
 import milos.style
 import milos.components
+import "panels"
 
 NeobrutalistWindow {
     id: settingsWindow

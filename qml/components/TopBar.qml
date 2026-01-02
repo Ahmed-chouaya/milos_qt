@@ -48,7 +48,7 @@ Rectangle {
 
         NetworkWidget {}
 
-        Item { width: Screen.width - 500 }
+        Item { width: 200; height: topBar.height }
 
         TopBarButton {
             text: "🔕"

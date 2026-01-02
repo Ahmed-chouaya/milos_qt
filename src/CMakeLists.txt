@@ -1,1 +1,2 @@
-# Source-specific CMake configuration for milos-qt
+# Source files are now listed in the main CMakeLists.txt
+# This file is kept for potential future use

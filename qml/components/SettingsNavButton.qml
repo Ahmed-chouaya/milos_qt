@@ -9,7 +9,7 @@ Rectangle {
     width: parent.width
     height: 40
 
-    color: parent.parent.currentIndex === index ? Theme.primaryColor() : "transparent"
+    color: parent && parent.currentIndex === index ? Theme.primaryColor() : "transparent"
     border.width: Theme.colors.outlineWidth
     border.color: Theme.colors.outline
 

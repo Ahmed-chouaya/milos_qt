@@ -4,6 +4,7 @@
 #include "services/AudioService.h"
 #include "services/SystemMonitor.h"
 #include "services/NetworkService.h"
+#include "services/MprisService.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,7 @@ int main(int argc, char *argv[])
     AudioService *audioService = new AudioService();
     SystemMonitor *systemMonitor = new SystemMonitor();
     NetworkService *networkService = new NetworkService();
+    MprisService *mprisService = new MprisService();
 
     qmlRegisterSingletonType<ThemeManager>("milos.style", 1, 0, "ThemeManager", [themeManager](QQmlEngine*, QJSEngine*) -> QObject* {
         return themeManager;
@@ -30,6 +32,10 @@ int main(int argc, char *argv[])
 
     qmlRegisterSingletonType<NetworkService>("milos.services", 1, 0, "NetworkService", [networkService](QQmlEngine*, QJSEngine*) -> QObject* {
         return networkService;
+    });
+
+    qmlRegisterSingletonType<MprisService>("milos.services", 1, 0, "MprisService", [mprisService](QQmlEngine*, QJSEngine*) -> QObject* {
+        return mprisService;
     });
 
     QQmlApplicationEngine engine;
