@@ -1,1 +1,32 @@
 .worktrees
+
+# Build artifacts
+build/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.moc
+*.qrc/_rcc_qmake*
+
+# IDE
+*.user
+*.autosave
+*.pro.user
+CMakeLists.txt.user
+.idea/
+.vscode/
+*.code-workspace
+
+# Qt
+qt_conf.ini
+*.qmlc
+*.jsc
+
+# Logs
+*.log
