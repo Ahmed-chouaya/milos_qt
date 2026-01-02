@@ -7,7 +7,7 @@ Rectangle {
     signal clicked()
 
     width: 48
-    height: topBar.height
+    height: 48
 
     color: Theme.secondaryColor()
     border.width: Theme.colors.outlineWidth
