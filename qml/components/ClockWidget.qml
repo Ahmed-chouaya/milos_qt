@@ -4,7 +4,7 @@ import milos.style
 
 Rectangle {
     width: 120
-    height: topBar.height
+    height: 48
 
     color: "transparent"
     border.width: 0

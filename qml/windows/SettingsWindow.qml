@@ -33,31 +33,37 @@ NeobrutalistWindow {
                 SettingsNavButton {
                     text: "Theme"
                     index: 0
+                    currentPage: settingsWindow.currentPage
                 }
 
                 SettingsNavButton {
                     text: "Wallpaper"
                     index: 1
+                    currentPage: settingsWindow.currentPage
                 }
 
                 SettingsNavButton {
                     text: "Display"
                     index: 2
+                    currentPage: settingsWindow.currentPage
                 }
 
                 SettingsNavButton {
                     text: "Audio"
                     index: 3
+                    currentPage: settingsWindow.currentPage
                 }
 
                 SettingsNavButton {
                     text: "Shortcuts"
                     index: 4
+                    currentPage: settingsWindow.currentPage
                 }
 
                 SettingsNavButton {
                     text: "About"
                     index: 5
+                    currentPage: settingsWindow.currentPage
                 }
             }
         }

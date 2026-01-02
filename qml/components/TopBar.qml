@@ -24,6 +24,8 @@ Rectangle {
         samples: 0
     }
 
+    signal settingsRequested()
+
     Row {
         anchors.fill: parent
         spacing: 0
@@ -57,6 +59,8 @@ Rectangle {
 
         SoundIcon {}
 
-        SystemTray {}
+        SystemTray {
+            onSettingsRequested: topBar.settingsRequested()
+        }
     }
 }

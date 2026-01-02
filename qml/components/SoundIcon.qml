@@ -5,7 +5,7 @@ Rectangle {
     id: soundIcon
 
     width: 48
-    height: topBar.height
+    height: 48
 
     color: "transparent"
 
@@ -20,8 +20,8 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
-        onEntered: soundPopup.open()
-        onExited: soundPopup.close()
+        onEntered: soundPopup.show(soundIcon)
+        onExited: soundPopup.hide()
     }
 
     SoundPopup {

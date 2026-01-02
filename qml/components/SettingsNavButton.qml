@@ -4,12 +4,13 @@ import milos.style
 Rectangle {
     property string text: ""
     property int index: 0
+    property int currentPage: 0
     signal clicked()
 
     width: parent.width
     height: 40
 
-    color: parent && parent.currentIndex === index ? Theme.primaryColor() : "transparent"
+    color: currentPage === index ? Theme.primaryColor() : "transparent"
     border.width: Theme.colors.outlineWidth
     border.color: Theme.colors.outline
 
@@ -24,7 +25,7 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            settingsWindow.currentPage = index
+            currentPage = index
             parent.clicked()
         }
     }

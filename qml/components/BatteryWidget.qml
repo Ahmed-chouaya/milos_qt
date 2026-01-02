@@ -3,7 +3,7 @@ import milos.style
 
 Rectangle {
     width: 48
-    height: topBar.height
+    height: 48
 
     color: "transparent"
 

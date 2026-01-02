@@ -9,20 +9,17 @@ NeobrutalistCard {
     height: 140
     title: "Volume"
 
-    property int popupY: 48
+    visible: false
 
-    x: parent.x + 48
-    y: popupY
-
-    property bool open: false
-
-    function open() {
-        open = true
+    function show(parentItem) {
+        if (parentItem) {
+            x = parentItem.x + parentItem.width - width + 48
+            y = 48
+        }
         visible = true
     }
 
-    function close() {
-        open = false
+    function hide() {
         visible = false
     }
 

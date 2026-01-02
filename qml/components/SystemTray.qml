@@ -2,10 +2,14 @@ import QtQuick
 import milos.style
 
 Rectangle {
+    id: systemTray
+
     width: 48
-    height: topBar.height
+    height: 48
 
     color: "transparent"
+
+    signal settingsClicked()
 
     Text {
         anchors.centerIn: parent
@@ -16,6 +20,6 @@ Rectangle {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: settingsWindow.visible = true
+        onClicked: systemTray.settingsClicked()
     }
 }

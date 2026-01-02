@@ -9,7 +9,12 @@ Window {
     title: "milos-qt"
     color: Theme.backgroundColor()
 
-    TopBar {}
+    TopBar {
+        onSettingsRequested: {
+            settingsWindow.visible = true
+            settingsWindow.requestActivate()
+        }
+    }
 
     SettingsWindow {
         id: settingsWindow
