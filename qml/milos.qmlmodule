@@ -1,0 +1,15 @@
+{
+    "name": "milos",
+    "type": "module",
+    "qt": {
+        "depends": ["milos.style"],
+        "classname": "milos",
+        "qmltypes": "qmltypes/milos.qmltypes"
+    },
+    "components": {
+        "NeobrutalistButton": "components/NeobrutalistButton.qml",
+        "NeobrutalistSlider": "components/NeobrutalistSlider.qml",
+        "NeobrutalistWindow": "components/NeobrutalistWindow.qml",
+        "NeobrutalistCard": "components/NeobrutalistCard.qml"
+    }
+}
