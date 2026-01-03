@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs = nixpkgs;
-     milos-qt.url = "github:Ahmed-chouaya/milos_qt";
+    milos-qt.url = "github:Ahmed-chouaya/milos_qt";
     milos-qt.inputs.nixpkgs = nixpkgs;
   };
 
@@ -24,18 +24,18 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.ahmed = import ./home/default.nix {
-                inherit pkgs;
-                milos-qt = milos-qt.packages.${system}.milos-qt;
-              };
+               home-manager.users.ahmed = import ./home/default.nix {
+                 inherit pkgs;
+                 # milos-qt = milos-qt.packages.${system}.milos-qt;
+               };
             }
           ];
         };
       };
 
-      packages.${system} = {
-        milos-qt = milos-qt.packages.${system}.milos-qt;
-      };
+       packages.${system} = {
+         # milos-qt = milos-qt.packages.${system}.milos-qt;
+       };
 
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = with pkgs; [

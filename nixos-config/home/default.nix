@@ -6,7 +6,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    milos-qt
+    # milos-qt
     eza
   ];
 
