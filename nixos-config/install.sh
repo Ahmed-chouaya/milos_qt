@@ -4,16 +4,21 @@ set -e
 echo "=== NixOS Niri + Milos-QT Installation ==="
 
 # Configuration
-REPO_URL="https://github.com/ahmedchouaya/milos-nixos.git"
+REPO_URL="https://github.com/Ahmed-chouaya/milos_qt.git"
 CONFIG_DIR="$HOME/nixos-config"
 
-# Clone repo if not exists
-if [ ! -d "$CONFIG_DIR" ]; then
-    echo "Cloning configuration..."
-    git clone "$REPO_URL" "$CONFIG_DIR"
+# Check if running from existing config
+if [ -f "install.sh" ]; then
+    echo "Running from existing configuration..."
+else
+    # Clone repo if not exists
+    if [ ! -d "$CONFIG_DIR" ]; then
+        echo "Cloning configuration..."
+        git clone "$REPO_URL" "$CONFIG_DIR"
+    fi
+    
+    cd "$CONFIG_DIR"
 fi
-
-cd "$CONFIG_DIR"
 
 # Check if hardware config exists
 if [ ! -f "hosts/hardware-configuration.nix" ]; then
@@ -28,7 +33,7 @@ if [ ! -f "hosts/hardware-configuration.nix" ]; then
     exit 0
 fi
 
-echo "🔧 Installing system..."
+echo "🔧 Building and installing system..."
 sudo nixos-rebuild switch --flake .#niri-host
 
 echo ""
