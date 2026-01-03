@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs = nixpkgs;
-    milos-qt.url = "github:ahmedchouaya/milos-qt";
+    milos-qt.url = "github:Ahmed-chouaya/milos-qt";
     milos-qt.inputs.nixpkgs = nixpkgs;
   };
 
