@@ -44,7 +44,7 @@ sudo swapon /dev/sda2
 ### Step 4: Install the System
 ```bash
 # Run the installation script
-curl -O https://raw.githubusercontent.com/Ahmed-chouaya/milos_qt/main/.worktrees/nixos-niri/install.sh
+curl -O https://raw.githubusercontent.com/Ahmed-chouaya/milos_qt/main/nixos-config/install.sh
 chmod +x install.sh
 ./install.sh
 ```
