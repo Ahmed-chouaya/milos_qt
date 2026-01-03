@@ -164,3 +164,4 @@ nix --log-format bar build --impure
 - [Niri README](https://github.com/yawnoc/niri)
 - [Home Manager Manual](https://nix-community.github.io/home-manager/)
 - [Milos-QT GitHub](https://github.com/ahmedchouaya/milos-qt)
+# Force refresh
